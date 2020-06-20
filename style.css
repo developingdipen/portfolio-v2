@@ -318,11 +318,22 @@ html, body {
         height: 300px;
         margin-bottom: 50px;
     }
+    
+    .display-picture-2{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
 
     @media (min-width: 768px) {
 
         .display-picture{
             height: 400px;
+        }
+
+        .display-picture-2{
+            width:700px;
         }
     }
 
