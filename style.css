@@ -1,5 +1,12 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body { margin: 0;} 
-body * {box-sizing: border-box;}
+body * {-webkit-box-sizing: border-box;box-sizing: border-box;}
 
 html, body {
  height:100%;
@@ -34,6 +41,9 @@ html, body {
         --primary-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         --secondary-font: 'Quicksand', sans-serif;
     }
+    ::-moz-selection {
+        background: rgb(252, 186, 174);
+      }
     ::selection {
         background: rgb(252, 186, 174);
       }
@@ -124,6 +134,8 @@ html, body {
 
     header a:hover{
         border-bottom: 1px solid var(--secondary-color);
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
     }
 
@@ -160,6 +172,8 @@ html, body {
 
     nav :hover{
         border-bottom:1px solid var(--secondary-color);
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
     }
 
@@ -183,8 +197,11 @@ html, body {
     }
 
     .contact-form{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap; 
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; 
         
         width: 90%;
     }
@@ -220,6 +237,8 @@ html, body {
 
     input[type=submit]:hover{
         border-bottom: 1px solid var(--secondary-color);
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
     }
 
@@ -242,6 +261,8 @@ html, body {
 
     .contact-fa-border:hover{
         border-bottom:1px solid var(--secondary-color);
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
     }
 
@@ -267,9 +288,15 @@ html, body {
 /* Footer Starts */
 
     .footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex; 
-        justify-content: center;
-        align-items: flex-start;
+        -webkit-box-pack: center; 
+            -ms-flex-pack: center; 
+                justify-content: center;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         text-align: center;
         font-size: 10px;
         color: var(--primary-color);
@@ -290,6 +317,8 @@ html, body {
     .footer p a:hover{
         font-style: italic;
         border-bottom: 1px solid var(--secondary-color);
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
     }
 
@@ -343,8 +372,11 @@ html, body {
 /* Work Page Starts */
 
     .projects-flex-parent{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         margin: 100px 20px;
     }
 
@@ -363,6 +395,8 @@ html, body {
     embed:hover{
         border-bottom: 5px solid var(--secondary-color);
         opacity: 1;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
     }
 
