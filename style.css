@@ -21,6 +21,7 @@ html, body {
     /* 5. Footer */
     /* 6. Curator Page */
     /* 7. Work Page */
+    /* 8. Case Study Page */
 
 /* /// Table of Contents Ends /// */
 
@@ -393,3 +394,57 @@ html, body {
     }
 /* Work Page Ends */
   
+
+/* Case Study Page Starts */
+
+.caseStudy-flex-parent{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 20px 100px 20px;
+}
+
+
+.caseStudy-child{
+    width: 100%;
+    padding: 20px 0px ;
+}
+
+embed{
+    width:100%;
+    height:50vh;
+    opacity: .5;
+}
+
+embed:hover{
+    border-bottom: 5px solid var(--secondary-color);
+    opacity: 1;
+    transition: .5s;
+}
+
+.live-project-link{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.live-project-link:hover{
+    border-bottom: 1px solid var(--secondary-color);
+    transition: .5s;
+}
+
+@media (min-width: 768px) {
+
+    .caseStudy-child{
+        width: 50%;
+        padding:20px 20px;
+    } 
+}
+@media (min-width: 1440px) {
+    
+}
+
+/* Case Study Page Ends */
