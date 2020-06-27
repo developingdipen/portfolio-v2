@@ -82,6 +82,10 @@ html, body {
         margin-top: 50px;
     }
 
+    .case-study h5{
+        margin-top: 25px;
+    }
+
     p{
         font-family: var(--secondary-font);
         margin: 10px 10px;
@@ -449,13 +453,9 @@ html, body {
     transition: .5s;
 }
 
-
-.tools-list{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-
-    list-style: none;
+.written-case-study{
+    text-align: left;
+    margin: 20px;
 }
 
 .slide-nav a{
@@ -480,6 +480,9 @@ html, body {
         display: flex;
     }
     
+    .written-case-study{
+        margin: 0px;
+    }
 }
 @media (min-width: 1024px) {
    
