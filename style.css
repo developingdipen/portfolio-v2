@@ -91,6 +91,14 @@ html, body {
         margin: 10px 10px;
     }
 
+    .hidden-citation{
+        opacity: 0;
+    }
+
+    .hidden-citation:hover{
+        opacity: 1;
+        transition: .5s;
+    }
     
     @media (min-width: 768px) {
 
@@ -356,8 +364,8 @@ html, body {
     }
 
     .project-child embed{
-        width:100%;
-        height:50vh;
+        width: 100%;
+        height: 70vh;
         opacity: .5;
     }
 
@@ -388,6 +396,10 @@ html, body {
             width: 50%;
             padding:20px 20px;
         } 
+
+        .project-child embed{
+            height:50vh;
+        }
     }
     @media (min-width: 1440px) {
 
@@ -458,10 +470,25 @@ html, body {
     margin: 20px;
 }
 
+.swipe-left-animation{
+    width: 30px;
+    height: 15px;
+    border: 1px solid var(--primary-color);
+
+    margin: 10px auto;
+}
+
+.animated-swipe-line{
+    width: 10px;
+    height: 10px;
+  
+}
+
 .slide-nav a{
     text-decoration: none;
     color: var(--primary-color);
     border-bottom: 1px solid white;
+    margin: 0px 2px;
 
 }
 
