@@ -27,7 +27,6 @@ html, body {
 /* /// Table of Contents Ends /// */
 
 
-
 /* Global Styles Starts */
     :root{
         --primary-color:  rgb(59, 58, 58);
@@ -56,17 +55,6 @@ html, body {
 
 /* Typography Starts */
 
-    h3{
-        display: inline-block;
-        font-weight: 100;
-        letter-spacing: 1px;
-        padding: 2px 0px;
-        margin-bottom: 200px;
-
-        border-bottom: 1px solid var(--secondary-color);
-    }
-
-
     h4{
         font-family: var(--primary-font);
         display: inline-block;
@@ -93,7 +81,7 @@ html, body {
     }
 
     .hidden-citation{
-        opacity: 0;
+        opacity: .15;
     }
 
     .hidden-citation:hover{
@@ -121,7 +109,6 @@ html, body {
     header a{
         font-family: var(--primary-font);
         font-size: 20px;
-        font-weight: 100;
         letter-spacing: 2px;
 
         color: var(--primary-color);
