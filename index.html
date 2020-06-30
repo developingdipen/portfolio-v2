@@ -15,84 +15,96 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
   
 </head>
 <body>
 
-    <header>
-        <a href="index.html" class="logo">DipenPatel</a>
-        <h5>I build Minimalist Websites that generate Maximalist Results.</h5>
-    </header>
-    
-    <nav class="main-nav">
-        <a href="curator.html" class="navlink">Curator</a>
-        <a href="work.html" class="navlink">Work</a>
-        <a href="index.html#contact" class="navlink">Contact</a>
-    </nav>
-
-    <section class="latest-work">
-        <h4>Latest Work</h4>
-        <div class= "projects-flex-parent" id="projects"> 
-            <div class= "project-child">
-              <embed src="https://developingdipen.github.io/Liquid-State/">
-                <a href="case-study.html#liquid-state" rel="noreferrer" class="live-project-link">Case Study</a>
-            </div>
-      
-            <div class= "project-child">
-              <embed src="https://developingdipen.github.io/The-Baking-Room/">
-                <a href="case-study.html#the-baking-room"  rel="noreferrer" class="live-project-link">Case Study</a>
-            </div>
-      
-            <div class= "project-child">
-              <embed src="https://developingdipen.github.io/The-Gallery/">
-                <a href="case-study.html#the-gallery"  rel="noreferrer" class="live-project-link">Case Study</a>
-            </div>
-          </div> 
-    </section>
-
-    <section class="contact" id="contact">
-        <h4>Get In Touch</h4>
-        
-        <form action="https://mailthis.to/DevelopingDipen" method="POST" encType="multipart/form-data" class="contact-form">
-            <input type="text" name="name" placeholder="Name" aria-label="name-input-area">
-            <input type="email" name="_replyto" placeholder="E-mail" aria-label="email-input-area">
-            <textarea name="message" placeholder="Tell Me Your Vision and I'll Show It to You" aria-label="message-text-area"></textarea>
-            <input type="hidden" name="_subject" value="Contact form submitted">
-            <input type="hidden" name="_after" value="https://developingdipen.com/">
-            <input type="hidden" name="_honeypot" value="">
-            <input type="hidden" name="_confirmation" value="">
-            <input type="submit" value="Submit">
-        </form>
-
-        <ul class="contact-list" id="contact-list">
-            <li><a href="https://www.linkedin.com/in/developingdipen/" target="_blank" rel="noreferrer" aria-label="linkedin-link" class="fa fa-linkedin contact-fa-border"></a>@developingdipen</li>
-            
-            <li><a href="https://github.com/developingdipen" target="_blank" rel="noreferrer" aria-label="github-link" class="fa fa-github contact-fa-border"></a>@developingdipen</li>
-
-            <li><a href="https://codepen.io/developingdipen" target="_blank" rel="noreferrer" aria-label="codepen-link"  class=" fa fa-codepen contact-fa-border"></a>@developingdipen</li>
-        </ul>
-
-        <div class="map" id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12071.507056844244!2d-74.1081841!3d40.8526294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f92736afbcd3%3A0x74b855cf619d71e1!2sWallington%2C%20NJ!5e0!3m2!1sen!2sus!4v1592330020042!5m2!1sen!2sus" frameborder="1" style="border:1px solid rgb(59, 58, 58);" allowfullscreen="" aria-hidden="false" tabindex="0" title="Location Map"></iframe>
-            <h6>Yes, my town is shaped like a heart.</h6>
+    <div id="splash-screen" class="splash-screen animate__animated  animate__fadeOut  animate__delay-3s">
+        <div class="splash-content animate__animated animate__fadeIn animate__slower ">
+            <a href="index.html" class="splash-logo">DipenPatel</a>
+            <h5>Wax On, Wax Off</h5>
         </div>
+    </div>
+
+    <div id="main-content" class="animate__animated animate__fadeIn animate__slow animate__delay-4s" >  
+        <header>
+            <a href="index.html" class="logo">DipenPatel</a>
+            <h5>I build Minimalist Websites that generate Maximalist Results.</h5>
+        </header>
+        
+        <nav class="main-nav">
+            <a href="curator.html" class="navlink">Curator</a>
+            <a href="work.html" class="navlink">Work</a>
+            <a href="index.html#contact" class="navlink">Contact</a>
+        </nav>
+
+        <section class="latest-work">
+            <h4>Latest Work</h4>
+            <div class= "projects-flex-parent" id="projects"> 
+                <div class= "project-child">
+                <embed src="https://developingdipen.github.io/Liquid-State/">
+                    <a href="case-study.html#liquid-state" rel="noreferrer" class="live-project-link">Case Study</a>
+                </div>
+        
+                <div class= "project-child">
+                <embed src="https://developingdipen.github.io/The-Baking-Room/">
+                    <a href="case-study.html#the-baking-room"  rel="noreferrer" class="live-project-link">Case Study</a>
+                </div>
+        
+                <div class= "project-child">
+                <embed src="https://developingdipen.github.io/The-Gallery/">
+                    <a href="case-study.html#the-gallery"  rel="noreferrer" class="live-project-link">Case Study</a>
+                </div>
+            </div> 
+        </section>
+
+        <section class="contact" id="contact">
+            <h4>Get In Touch</h4>
+            
+            <form action="https://mailthis.to/DevelopingDipen" method="POST" encType="multipart/form-data" class="contact-form">
+                <input type="text" name="name" placeholder="Name" aria-label="name-input-area" required>
+                <input type="email" name="_replyto" placeholder="E-mail" aria-label="email-input-area" required>
+                <textarea name="message" placeholder="Tell Me Your Vision and I'll Show It to You" aria-label="message-text-area" required></textarea>
+                <input type="hidden" name="_subject" value="Contact form submitted">
+                <input type="hidden" name="_after" value="https://developingdipen.com/">
+                <input type="hidden" name="_honeypot" value="">
+                <input type="hidden" name="_confirmation" value="">
+                <input type="submit" value="Submit">
+            </form>
+
+            <ul class="contact-list" id="contact-list">
+                <li><a href="https://www.linkedin.com/in/developingdipen/" target="_blank" rel="noreferrer" aria-label="linkedin-link" class="fa fa-linkedin contact-fa-border"></a>@developingdipen</li>
+                
+                <li><a href="https://github.com/developingdipen" target="_blank" rel="noreferrer" aria-label="github-link" class="fa fa-github contact-fa-border"></a>@developingdipen</li>
+
+                <li><a href="https://codepen.io/developingdipen" target="_blank" rel="noreferrer" aria-label="codepen-link"  class=" fa fa-codepen contact-fa-border"></a>@developingdipen</li>
+            </ul>
+
+            <div class="map" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12071.507056844244!2d-74.1081841!3d40.8526294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f92736afbcd3%3A0x74b855cf619d71e1!2sWallington%2C%20NJ!5e0!3m2!1sen!2sus!4v1592330020042!5m2!1sen!2sus" frameborder="1" style="border:1px solid rgb(59, 58, 58);" allowfullscreen="" aria-hidden="false" tabindex="0" title="Location Map"></iframe>
+                <h6>Yes, my town is shaped like a heart.</h6>
+            </div>
 
 
-            <img src="Hydration.jpg" alt="Picture of Developer" class="display-picture-2">
-            <h6>The graphic above, and the one featured on the Curator Page were created using Procreate.</h6>
+                <img src="Hydration.jpg" alt="Picture of Developer" class="display-picture-2">
+                <h6>The graphic above, and the one featured on the Curator Page were created using Procreate.</h6>
 
-    </section>
+        </section>
 
-    <section class="footer">
-        <footer>
-            <p>&copy; 2020 All Rights Reserved.</p>
-            <p>Made with
-                <i class="fa fa-coffee"></i>
-                <i class="fa fa-heart-o"></i> 
-                <i class="fa fa-magic"></i>  
-                by <a href="https://developingdipen.com/" target="_blank" rel="noreferrer" aria-label="Website Developer's Link">Developing Dipen</a></p>
-        </footer>
-    </section>
-
+        <section class="footer">
+            <footer>
+                <p>&copy; 2020 All Rights Reserved.</p>
+                <p>Made with
+                    <i class="fa fa-coffee"></i>
+                    <i class="fa fa-heart-o"></i> 
+                    <i class="fa fa-magic"></i>  
+                    by <a href="https://developingdipen.com/" target="_blank" rel="noreferrer" aria-label="Website Developer's Link">Developing Dipen</a></p>
+            </footer>
+        </section>
+    </div> 
+    
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
