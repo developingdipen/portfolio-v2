@@ -81,18 +81,23 @@ html, body {
 
     p{
         font-family: var(--secondary-font);
-        margin: 10px 10px;
+        margin: 10px 20px;
     }
 
     .hidden-citation{
-        opacity: .15;
+        color: rgb(59, 58, 58, .15);
     }
 
     .hidden-citation:hover{
-        opacity: 1;
+        color: rgb(59, 58, 58);
         transition: .5s;
     }
-    
+
+    h6{
+        margin: 0px 20px;
+    }
+
+
     @media (min-width: 768px) {
 
         h6,
@@ -180,7 +185,7 @@ html, body {
         background-color: white;
         width: 100%;
         padding: .5rem 0rem .5rem 0rem;
-        z-index: 99;
+        z-index: 9999999;
     }
 
     .main-nav a{  
@@ -237,6 +242,7 @@ html, body {
         border-bottom: 1px solid var(--primary-color);
         margin:20px;
         padding: 10px;
+        background-color: transparent;
     }
 
     input[type=text],
@@ -254,7 +260,6 @@ html, body {
         padding:15px 15px;
         margin: 60px auto;
         border: 1px solid var(--primary-color);
-        background-color: white;
         cursor: pointer;
     }
 
@@ -266,6 +271,7 @@ html, body {
 
     .contact-list li{
         margin-bottom: 10px;
+        list-style: none;
     }
     .contact .fa{
         margin-right: 20px;
@@ -306,9 +312,6 @@ html, body {
 /* Footer Starts */
 
     .footer {
-        display: flex; 
-        justify-content: center;
-        align-items: flex-start;
         text-align: center;
         font-size: 10px;
         color: var(--primary-color);
@@ -457,7 +460,7 @@ html, body {
     }
 
     .slide-child{
-        padding: 20px 0px ;
+        padding: 20px 20px ;
     }
 
     .slide-child embed{
