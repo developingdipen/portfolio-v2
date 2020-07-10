@@ -1,0 +1,13 @@
+{
+  "name": "DipenPatel",
+  "short_name": "DipenPatel",
+  "start_url": "https://developingdipen.com/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "I build Minimalist Websites that generate Maximalist Results.",
+  "icons": [{
+    "src": "DP_Favicon.png",
+    "sizes": "200x200",
+    "type": "image/png"
+  }]
+}
