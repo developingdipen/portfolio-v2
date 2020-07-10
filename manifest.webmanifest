@@ -4,6 +4,7 @@
   "start_url": "https://developingdipen.com/",
   "display": "standalone",
   "background_color": "#fff",
+  "theme_color": "#fff",
   "description": "I build Minimalist Websites that generate Maximalist Results.",
   "icons": [{
     "src": "DP_Favicon.png",
