@@ -52,7 +52,7 @@ html, body {
         outline: 2px solid var(--secondary-color);
     }
 
-    .project-child embed,
+/*     .project-child embed,
         .slide-child embed{
             pointer-events: none;
         }
@@ -63,7 +63,7 @@ html, body {
             pointer-events: all;
         }
         
-    }
+    } */
    
 /* Global Styles Ends */
 
