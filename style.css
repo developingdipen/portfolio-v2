@@ -52,19 +52,23 @@ html, body {
         outline: 2px solid var(--secondary-color);
     }
 
-/*     .project-child embed,
-        .slide-child embed{
-            pointer-events: none;
-        }
+  .project-tile-image{
+      width: 100%;
+  }
 
-    @media (min-width: 430px) {
-        .project-child embed,
-        .slide-child embed{
-            pointer-events: all;
-        }
-        
-    } */
-   
+  embed{
+      display: none;
+  }
+  @media (min-width: 430px) {
+
+    .project-tile-image{
+        display: none;
+    }
+
+    embed{
+        display: block;
+    }
+}
 /* Global Styles Ends */
 
 
