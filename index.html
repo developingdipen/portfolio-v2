@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#fff"/>
-    <title>DIPENPATEL</title>
+    <title>Dipen Patel | Front-End Web Developer</title>
 
     <meta name="description" content="I build Minimalist Websites that generate Maximalist results."/>
     <link rel="icon" href="Images/DP_Favicon.png">
@@ -15,21 +15,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
   
 </head>
-<body>
+<body class="animate__animated animate__fadeIn animate__slower">
 
-    <div id="splash-screen" class="splash-screen animate__animated  animate__fadeOut  animate__delay-3s">
-        <div class="splash-content animate__animated animate__fadeIn animate__slower ">
-            <a href="index.html" class="splash-logo">DipenPatel</a>
-            <h5>Wax On, Wax Off</h5>
-        </div>
-    </div>
-
-    <div id="main-content" class="animate__animated animate__fadeIn animate__slow animate__delay-4s" >  
         <header>
             <a href="index.html" class="logo">DipenPatel</a>
             <h5>I build Minimalist Websites that generate Maximalist Results.</h5>
@@ -38,12 +29,40 @@
         
         <nav class="main-nav">
             <a href="curator.html" class="navlink">Curator</a>
-            <a href="work.html" class="navlink">Work</a>
+            <a href="#latest-work" class="navlink">Work</a>
             <a href="#contact" class="navlink">Contact</a>
         </nav>
         
+        <section class="about" id="about">
+            <div class="row">  
+                <div class="column">
+                    <img src="Images/Self_Portrait.jpg" alt="Picture of Developer" class="display-picture">
+                </div>    
+                <div class="column">
+                <h4>About Me</h4>
+                    <p>Hello! I'm Dipen, a Front-End Web Developer based in New Jersey.</p> 
+                    <p>I'm a visual learner who loves all things visual, be it Artwork, Photography, or Cooking!</p>
+                    <p>Building eye-catching and impactful websites is what I strive for.</p>
+                </div>
+                <div class="column">
+                <h4>Tech I Work With</h4> 
+                    <div class="tools-list-parent">
+                        <ul class="tools-list">
+                            <li>HTML & CSS</li>
+                            <li>Bootstrap</li>
+                            <li>TailWind</li>
+                        </ul>
+                        <ul class="tools-list">
+                            <li>Javascript</li>
+                            <li>Git/Github</li>
+                            <li>Google DevTools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section class="latest-work">
+        <section class="latest-work" id="latest-work">
             <h4>Latest Work</h4>
             <div class= "projects-flex-parent" id="projects"> 
                 <div class= "project-child">
@@ -63,11 +82,27 @@
                     <img src="Images/The_Gallery.jpg" class="project-tile-image" alt="">
                     <a href="case-study.html#slide-3"  rel="noreferrer" class="case-study-link">Case Study</a>
                 </div>
+                <div class= "project-child" >
+                    <embed src="https://developingdipen.github.io/SH-Medical-Billing/">
+                      <img src="Images/SH_Medical_Billing.jpg" class="project-tile-image" alt="">
+                      <a href="case-study.html#slide-4" rel="noreferrer" class="case-study-link">Case Study</a>
+                </div>
+      
+                <div class= "project-child">
+                    <embed src="https://developingdipen.github.io/deepak/">
+                        <img src="Images/Deepaks_Darkroom.jpg" class="project-tile-image" alt="">
+                        <a href="case-study.html#slide-5" rel="noreferrer" class="case-study-link">Case Study</a>
+                </div> 
+        
+                <div class= "project-child">
+                    <embed src="https://developingdipen.github.io/portfolio_website/">
+                    <img src="Images/Developing_Dipen_V1.jpg" class="project-tile-image" alt="">
+                    <a href="case-study.html#slide-6" rel="noreferrer" class="case-study-link">Case study</a>
+                </div>
             </div> 
         </section>
-    </div> 
 
-        <section class="contact animate__animated animate__fadeIn animate__slower" id="contact">
+        <section class="contact" id="contact">
             <h4>Get In Touch</h4>
             
             <form action="https://formspree.io/mvowvoro" method="POST" encType="multipart/form-data" class="contact-form">
@@ -93,10 +128,6 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12071.507056844244!2d-74.1081841!3d40.8526294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f92736afbcd3%3A0x74b855cf619d71e1!2sWallington%2C%20NJ!5e0!3m2!1sen!2sus!4v1592330020042!5m2!1sen!2sus" frameborder="1" style="border:1px solid rgb(59, 58, 58);" allowfullscreen="" aria-hidden="false" tabindex="0" title="Location Map"></iframe>
                 <h6>Yes, my town is shaped like a heart.</h6>
             </div>
-
-
-                <img src="Images/Hydration.jpg" alt="Picture of Developer" class="display-picture-2">
-                <h6>The graphic above, and the one featured on the Curator Page were created using Procreate.</h6>
 
         </section>
 
