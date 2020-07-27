@@ -136,43 +136,6 @@ html, body {
 
 /* Typography Ends */
 
-/* Splash Screen Starts */
-    .splash-screen{
-        height: 100vh;
-        width: 100vw;
-        position: absolute;
-        top: 0;
-        z-index: 120;
-        background-color: white;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-    }
-
-
-    .splash-screen a{
-        font-family: var(--primary-font);
-        font-size: 20px;
-        letter-spacing: 2px;
-
-        color: var(--primary-color);
-
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-
-
-        padding: 15px 15px;
-        border: 1px solid var(--primary-color);
-    }
-
-    .splash-screen a:hover{
-        border-bottom: 1px solid var(--secondary-color);
-        transition: .5s;
-    }
-
-/* Splash Screen Ends */
 
 /* Header Starts */
 
@@ -195,10 +158,11 @@ html, body {
 
         padding: 15px 15px;
         border: 1px solid var(--primary-color);
+        border-bottom: 1px solid var(--secondary-color)
     }
 
     header a:hover{
-        border-bottom: 1px solid var(--secondary-color);
+        border: 1px solid var(--secondary-color);
         transition: .5s;
     }
 
@@ -288,11 +252,12 @@ html, body {
         padding:15px 15px;
         margin: 60px auto;
         border: 1px solid var(--primary-color);
+        border-bottom: 1px solid var(--secondary-color);
         cursor: pointer;
     }
 
     input[type=submit]:hover{
-        border-bottom: 1px solid var(--secondary-color);
+        border: 1px solid var(--secondary-color);
         transition: .5s;
     }
 
@@ -383,27 +348,34 @@ html, body {
         margin-bottom: 50px
     }
 
-    .display-picture{
+    .display-picture, .display-picture-2{
         width: auto;
         height: 300px;
         margin-bottom: 50px;
     }
     
     .display-picture-2{
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
+        padding-left: 40px;
     }
     
+    .tools-list-parent{
+        display: flex;
+        text-align: left;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .tools-list{
+        list-style-type: circle;
+    }
+    .tools-list-parent :nth-child(1){
+        padding-right: 20px;
+    }
 
     @media (min-width: 768px) {
 
-        .display-picture{
+        .display-picture, .display-picture-2{
             height: 400px;
-        }
-
-        .display-picture-2{
-            width:700px;
         }
     }
 
